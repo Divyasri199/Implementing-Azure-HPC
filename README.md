@@ -143,7 +143,9 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
    
     ![](../main/media/re%2Bcr.png)
    
-   tab of the **Create a Bastion** blade, select **Create**:
+7. Review the configuration and click on **Create**.
+
+   ![](../main/media/create.png)
 
    > **Note**: Wait for the deployment to complete before you proceed to the next exercise. The deployment might take about 5 minutes.
 
