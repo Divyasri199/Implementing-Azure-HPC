@@ -165,8 +165,15 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 1. On the **azcli-vm0** blade, select **Connect** and click on **Bastion** from the drop-down menu.
 
    ![](../main/media/connect.png) 
+   
+1. On **Bastion** page, enter the below details:
 
-1. On the **azcli-vm0** blade, select **Connect**, in the drop-down menu, select **Bastion**, on the **azcli-vm0 \| Bastion** blade, enter **azureadm** as the user name and the password **Password.1!!** you set during the Azure VM deployment in the first task of this exercise, and then select **Connect**.
+    - **User name** : **azureadm (1)**
+    - **Password** : **Password.1!! (2)**
+    - Click on **Connect (3)**
+
+     ![](../main/media/connectbastion.png)
+
 
 ## Exercise 2: Implement Azure HPC OnDemand Platform cloud infrastructure
 
