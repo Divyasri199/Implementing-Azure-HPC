@@ -92,7 +92,10 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 1. In the **Azure portal**, open the **Azure Cloud Shell** by clicking on the cloud shell icon in the top menu bar. Alternatively, you can open cloud shell by navigating to https://shell.azure.com 
 
   ![](../media/cloudshell.png)
-2.   
+
+2. After launching the Azure Cloud Shell, select the **Bash** option.
+
+  ![](../media/bash.png)
   
 2. Run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
 
