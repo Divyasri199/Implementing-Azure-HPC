@@ -84,7 +84,7 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
      
      
 
-### Task 1: Deploy Azure Bastion 
+### Task 2: Deploy Azure Bastion 
 
 > **Note**: Azure Bastion allows for connection to Azure VMs without relying on public endpoints, providing protection against brute force exploits that target operating system level credentials.
 
@@ -117,9 +117,16 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 
 
 1. Close the Cloud Shell pane.
-1. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Bastions** and, in the list of results, select **Bastions**.
-1. On the **Bastions** blade, select **+ Create**.
-1. On the **Basic** tab of the **Create a Bastion** blade, specify the following settings and select **Review + create**:
+
+1. Type **Bastions (1)** in the search box of the Azure portal menu, and select **Bastions (2)**.
+
+     ![](../main/media/bastions.png)
+     
+4. On the **Bastions** blade, select **+ Create Bastion**.
+
+     ![](../main/media/create%20bastion.png)
+     
+6. On the **Basic** tab of the **Create a Bastion** blade, specify the following settings and select **Review + create**:
 
    |Setting|Value|
    |---|---|
