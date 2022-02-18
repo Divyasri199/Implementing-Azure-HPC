@@ -79,7 +79,7 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
    |Setting|Value|
    |---|---|
    |Subscription|the name of the Azure subscription you are using in this lab|
-   |Resource group|**azhop-cli-RG**|
+   |Resource group|**Azure-hpc-<inject key="DeploymentID" />**|
    |Name|**azhop-cli-bastion**|
    |Region|the same Azure region to which you used for deployment in the previous task of this exercise|
    |Tier|**Basic**|
