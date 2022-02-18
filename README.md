@@ -174,6 +174,53 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 
      ![](../main/media/connectbastion.png)
 
+1. Within the SSH session to the Azure VM, run the following command to update the package manager list of available packages and their versions:
+
+   ```bash
+   sudo apt-get update
+   ```
+
+1. Run the following command to upgrade the versions of the local packages (confirm when prompted whether to proceed):
+
+   ```bash
+   sudo apt-get upgrade -y
+   ```
+
+1. Run the following command to install Git:
+
+   ```bash
+   sudo apt-get install git
+   ```
+
+1. Run the following commands to clone the **az-hop** repository:
+
+   ```bash
+   rm ~/az-hop -rf
+   git clone --recursive https://github.com/Azure/az-hop.git -b v1.0.14
+   ```
+
+1. Run the following commands to install all the tools required to provision the **az-hop** environment:
+
+   ```bash
+   cd ~/az-hop/
+   sudo ./toolset/scripts/install.sh
+   ```
+
+   > **Note**: Wait until the script execution to complete. This might take about 5 minutes.
+
+1. Within the SSH session to the Azure VM, run the following command to sign-in to the Azure subscription you are using in this lab:
+
+   ```bash
+   az login
+   ```
+
+1. Note the code displayed in the output of the command, switch to your lab computer, open another tab in the browser window displaying the Azure portal, navigate to [the Microsoft Device Login page](https://microsoft.com/devicelogin), enter the code, and select **Next**.
+1. If prompted, sign in with the credentials of the user account with the Owner role in the Azure subscription you are using in this lab, then select **Continue**, and close the newly opened browser tab.
+1. Back in the browser window displaying the Azure portal, within the SSH session to the Azure VM, run the following command to identify the Azure subscription you are connected to:
+
+   ```bash
+   az account show
+   ```
 
 ## Exercise 2: Implement Azure HPC OnDemand Platform cloud infrastructure
 
