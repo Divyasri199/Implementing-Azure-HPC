@@ -89,7 +89,12 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 > **Note**: Azure Bastion allows for connection to Azure VMs without relying on public endpoints, providing protection against brute force exploits that target operating system level credentials.
 
 
-1. On the lab computer, in the browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
+1. In the **Azure portal**, open the **Azure Cloud Shell** by clicking on the cloud shell icon in the top menu bar. Alternatively, you can open cloud shell by navigating to https://shell.azure.com 
+
+  ![](../media/cloudshell.png)
+2.   
+  
+2. Run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
 
    ```bash
    RGNAME='Azure-hpc-DID'
