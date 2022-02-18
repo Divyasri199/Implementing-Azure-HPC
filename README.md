@@ -208,6 +208,8 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 
    > **Note**: Wait until the script execution to complete. This might take about 5 minutes.
 
+### Task 4: Prepare the Azure subscription for deployment
+
 1. Within the SSH session to the Azure VM, run the following command to sign-in to the Azure subscription you are using in this lab:
 
    ```bash
@@ -221,6 +223,38 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
    ```bash
    az account show
    ```
+
+1. If the Azure subscription you are connected to is different from the one you intend to use in this lab, run the following command to change the subscription you are currently connected to (replace the `<subscription_ID>` placeholder with the value of the subscriptionID parameter of the Azure subscription you intend to use in this lab):
+
+   ```bash
+   az account set --subscription '<subscription_ID>'
+   ```
+
+1. Within the SSH session to the Azure VM, run the following command to ensure that the CycleCloud marketplace image is available in your Azure subscription: 
+
+   ```bash
+   az vm image terms accept --offer azure-cyclecloud --publisher azurecyclecloud --plan cyclecloud-81
+   ```
+
+1. Run the following command to ensure that the Azure HPC Lustre marketplace image is available in your Azure subscription: 
+
+   ```bash
+   az vm image terms accept --offer azurehpc-lustre --publisher azhpc --plan azurehpc-lustre-2_12
+   ```
+
+1. Run the following command to register the Azure NetApp Resource Provider:
+
+   ```bash
+   az provider register --namespace Microsoft.NetApp --wait
+   ```
+
+1. Run the following command to verify that the Azure Resource Provider has been registered:
+
+   ```bash
+   az provider list --query "[?namespace=='Microsoft.NetApp']" --output table
+   ```
+
+   > **Note**: In the output of the command, verify that the value of **RegistrationState** is listed as **Registered**.
 
 ## Exercise 2: Implement Azure HPC OnDemand Platform cloud infrastructure
 
