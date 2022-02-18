@@ -54,11 +54,40 @@ Duration: 10 minutes
 
 In this exercise, you will set up an Azure VM that will be used for deployment of the lab environment. 
 
+### Task 1: Log in to Azure Portal and verify the pre-deployed resources
 
+1. In the virtual machine (VM) on the left, click on the Azure Portal as shown below.
+
+   ![Azure Portal](https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/main/media/gs4.png)
+   
+2. When you click on Azure portal, edge browser welcome screen will come up, select Start without your data.
+
+   ![Start without data](https://github.com/CloudLabsAI-Azure/azure-spring-cloud-training/blob/master/media/get_started.png)
+   
+3. On next window, click on Confirm and start browsing.
+
+   ![](https://github.com/CloudLabsAI-Azure/azure-spring-cloud-training/blob/master/media/confirm.png)
+   
+4. Now, you will see two tabs in edge browser, close first tab named with Microsoft Edge.
+
+5. On Sign in to Microsoft Azure tab you will see login screen, in that enter following email/username and then click on Next.
+
+    * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   
+     ![](media/azure-login-enter-email.png "Enter Email")
+     
+1. Now enter the following password and click on **Sign in**.
+
+   * Password: <inject key="AzureAdUserPassword"></inject>
+   
+     ![](media/azure-login-enter-password.png "Enter Password")
+     
+     
 
 ### Task 1: Deploy Azure Bastion 
 
 > **Note**: Azure Bastion allows for connection to Azure VMs without relying on public endpoints, providing protection against brute force exploits that target operating system level credentials.
+
 
 1. On the lab computer, in the browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
 
