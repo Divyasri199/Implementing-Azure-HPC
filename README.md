@@ -139,7 +139,7 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
    |Subnet|**AzureBastionSubnet (192.168.3.0/24)**|
    |Public IP address|**Create new**|
    |Public IP name|**azhop-cli-pip**|
-   |Click on **Review + create**|
+   |Review + Create| Click on **Review + create**|
    
     ![](../main/media/re%2Bcr.png)
    
