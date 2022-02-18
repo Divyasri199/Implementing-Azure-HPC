@@ -91,11 +91,19 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 
 1. In the **Azure portal**, open the **Azure Cloud Shell** by clicking on the cloud shell icon in the top menu bar. Alternatively, you can open cloud shell by navigating to https://shell.azure.com 
 
-  ![](../main/media/cloudshell.png)
+    ![](../main/media/cloudshell.png)
 
 2. After launching the Azure Cloud Shell, select the **Bash** option.
 
-  ![](../main/media/bash.png)
+     ![](../main/media/bash.png)
+     
+3. Now on You have no storage mounted dialog box click on **Show advanced settings. Select Create new under Storage account and provide values as below:
+ 
+    - **Cloud Shell region**: **Central US**
+    - **Storage account** : **stacc-<inject key="DeploymentID" />**
+    - **File Share** : **blob**
+
+     ![](../main/media/create%20storage.png)
   
 2. Run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
 
