@@ -103,17 +103,17 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
     - **Storage account** : **stacc-<inject key="DeploymentID" />**
     - **File Share** : **blob**
 
-     ![](../main/media/create%20storage.png)
+      ![](../main/media/create%20storage.png)
   
-2. Run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
+4. Run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
 
-   ```bash
-   RGNAME='Azure-hpc-DID'
-   VNETNAME='azcli-vnet'
-   az network vnet subnet create --resource-group $RGNAME --vnet-name $VNETNAME --name AzureBastionSubnet --address-prefixes 192.168.3.0/24
-   ```
+      ```bash
+         RGNAME='Azure-hpc-DID'
+         VNETNAME='azcli-vnet'
+         az network vnet subnet create --resource-group $RGNAME --vnet-name $VNETNAME --name AzureBastionSubnet --address-prefixes 192.168.3.0/24
+      ```
 
- > **Note :** Replace the DID with the value **<inject key="DeploymentID" />**
+   > **Note :** Replace the DID with the value **<inject key="DeploymentID" />**
 
 
 1. Close the Cloud Shell pane.
