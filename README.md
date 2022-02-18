@@ -132,15 +132,18 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
    |---|---|
    |Subscription|the name of the Azure subscription you are using in this lab|
    |Resource group|**Azure-hpc-<inject key="DeploymentID" />**|
-   |Name|**azhop-cli-bastion**|
+   |Name|**azure-hpc-bastion**|
    |Region|the same Azure region to which you used for deployment in the previous task of this exercise|
    |Tier|**Basic**|
    |Virtual network|**azcli-vnet**|
    |Subnet|**AzureBastionSubnet (192.168.3.0/24)**|
    |Public IP address|**Create new**|
    |Public IP name|**azhop-cli-pip**|
-
-1. On the **Review + create** tab of the **Create a Bastion** blade, select **Create**:
+   |Click on **Review + create**|
+   
+    ![](../main/media/re%2Bcr.png)
+   
+   tab of the **Create a Bastion** blade, select **Create**:
 
    > **Note**: Wait for the deployment to complete before you proceed to the next exercise. The deployment might take about 5 minutes.
 
