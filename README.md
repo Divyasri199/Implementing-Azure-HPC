@@ -63,10 +63,13 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 1. On the lab computer, in the browser window displaying the Azure portal, from the Bash session in the Cloud Shell pane, run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
 
    ```bash
-   RGNAME='azhop-cli-RG'
+   RGNAME='Azure-hpc-DID'
    VNETNAME='azcli-vnet'
    az network vnet subnet create --resource-group $RGNAME --vnet-name $VNETNAME --name AzureBastionSubnet --address-prefixes 192.168.3.0/24
    ```
+
+ > **Note :** Replace the DID with the value **<inject key="DeploymentID" />**
+
 
 1. Close the Cloud Shell pane.
 1. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Bastions** and, in the list of results, select **Bastions**.
