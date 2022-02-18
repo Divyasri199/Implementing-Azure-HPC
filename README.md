@@ -150,11 +150,22 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
    > **Note**: Wait for the deployment to complete before you proceed to the next exercise. The deployment might take about 5 minutes.
 
 
-### Task 2: Connect to the VM
+### Task 3: Connect to the VM
 
 > **Note**: Ensure that your browser has the pop-up functionality enabled before you attempt to connect via Azure Bastion.
 
-1. On the lab computer, in the browser window displaying the Azure portal, use the **Search resources, services, and docs** text box to search for **Virtual machines** and, from the **Virtual machines** blade, select **azcli-vm0**.
+1. Type **Virtual machines (1)** in the search box of **Azure Portal** and select **Virtual machines (2)**.
+
+     ![](../main/media/virtual%20machines.png)
+     
+1. On the **Virtual machines** page, select **azcli-vm0**.
+
+    ![](../main/media/selectvm.png)
+    
+1. On the **azcli-vm0** blade, select **Connect** and click on **Bastion** from the drop-down menu.
+
+   ![](../main/media/connect.png) 
+
 1. On the **azcli-vm0** blade, select **Connect**, in the drop-down menu, select **Bastion**, on the **azcli-vm0 \| Bastion** blade, enter **azureadm** as the user name and the password **Password.1!!** you set during the Azure VM deployment in the first task of this exercise, and then select **Connect**.
 
 ## Exercise 2: Implement Azure HPC OnDemand Platform cloud infrastructure
