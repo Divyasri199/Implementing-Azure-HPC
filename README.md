@@ -229,7 +229,13 @@ An az-hop environment is defined by using a configuration file named **config.ym
    ```bash
    ./build.sh -a plan
    ```
+  
+  >**Note :** Incase if you get error while running the above command, run the command mentioned below and re-perform the step-1.
 
+   ```bash
+   sudo su
+   ```
+   
 1. Review the generated list of resources and then run the following command to trigger the deployment of the Azure HPC OnDemand Platform infrastructure:
 
    ```bash
