@@ -172,13 +172,13 @@ An az-hop environment is defined by using a configuration file named **config.ym
      
       
 
-1. Open the **config.yml** file using your preferred editor (such as Nano or vi)
+2. Open the **config.yml** file using your preferred editor (such as Nano or vi)
 
    ```bash
    sudo vi config.yml
    ```
 
-1. Review the content of the **config.yml** file and note that it includes the following settings:
+3. Review the content of the **config.yml** file and note that it includes the following settings:
 
    - **location**: Update name of the location as **centralus**
    - **resource_group**: Update the resource group name as **Azure-hpc-<inject key="DeploymentID" enableCopy="false" />**(you do have the option of using an existing resource group by setting **use_existing_rg** to **true**)
@@ -192,7 +192,7 @@ An az-hop environment is defined by using a configuration file named **config.ym
    - **images**: the list of images that will be available for deployment of compute cluster nodes and their respective configuration
    - **queues**: the list of node arrays of CycleCloud and their respective configuration
 
-1. If needed, change the name of the target Azure region set in the **config.yml** file to the one you are using in this lab, save the change, and close the file.
+4. If needed, change the name of the target Azure region set in the **config.yml** file to the one you are using in this lab, save the change, and close the file.
 
 ### Task 2: Deploy Azure HPC OnDemand Platform infrastructure
 
@@ -202,13 +202,13 @@ An az-hop environment is defined by using a configuration file named **config.ym
    ./build.sh -a plan
    ```
   
-  >**Note :** Incase if you get error while running the above command, run the command mentioned below and re-perform the step-1.
+    >**Note :** Incase if you get error while running the above command, run the command mentioned below and re-perform the step-1.
 
-   ```bash
-   sudo su
-   ```
+     ```bash
+     sudo su
+     ```
    
-1. Review the generated list of resources and then run the following command to trigger the deployment of the Azure HPC OnDemand Platform infrastructure:
+2. Review the generated list of resources and then run the following command to trigger the deployment of the Azure HPC OnDemand Platform infrastructure:
 
    ```bash
    ./build.sh -a apply
