@@ -100,7 +100,7 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 3. Now on You have no storage mounted dialog box click on **Show advanced settings. Select Create new under Storage account and provide values as below:
  
     - **Cloud Shell region**: **Central US**
-    - **Storage account** : **stacc-<inject key="DeploymentID" />**
+    - **Storage account** : **stacc<inject key="DeploymentID" />**
     - **File Share** : **blob**
 
       ![](../main/media/create%20storage.png)
