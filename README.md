@@ -203,7 +203,7 @@ An az-hop environment is defined by using a configuration file named **config.ym
 1. Open the **config.yml** file using your preferred editor (such as Nano or vi)
 
    ```bash
-   vi config.yml
+   sudo vi config.yml
    ```
 
 1. Review the content of the **config.yml** file and note that it includes the following settings:
