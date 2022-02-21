@@ -48,13 +48,7 @@ January 2022
    - A modern web browser (Microsoft Edge, Google Chrome, or Mozilla Firefox)
 
 
-## Exercise 1: Prepare for implementing Azure HPC OnDemand Platform environment
-
-Duration: 10 minutes
-
-In this exercise, you will set up an Azure VM that will be used for deployment of the lab environment. 
-
-### Task 1: Log in to Azure Portal and verify the pre-deployed resources
+### Getting Started
 
 1. In the virtual machine (VM) on the left, click on the Azure Portal as shown below.
 
@@ -74,17 +68,23 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
    
-     ![](https://github.com/CloudLabsAI-Azure/azure-spring-cloud-training/blob/master/media/azure-login-enter-email.png)
+     ![](../main/media/odl.png)
      
 1. Now enter the following password and click on **Sign in**.
 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-     ![](https://github.com/CloudLabsAI-Azure/azure-spring-cloud-training/blob/master/media/azure-login-enter-password.png)
-     
-     
+     ![](../main/media/password.png)
 
-### Task 2: Deploy Azure Bastion 
+
+## Exercise 1: Prepare for implementing Azure HPC OnDemand Platform environment
+
+Duration: 10 minutes
+
+In this exercise, you will set up an Azure VM that will be used for deployment of the lab environment. 
+
+
+### Task 1: Deploy Azure Bastion 
 
 > **Note**: Azure Bastion allows for connection to Azure VMs without relying on public endpoints, providing protection against brute force exploits that target operating system level credentials.
 
@@ -150,7 +150,7 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
    > **Note**: Wait for the deployment to complete before you proceed to the next exercise. The deployment might take about 5 minutes.
 
 
-### Task 3: Connect to the VM
+### Task 2: Connect to the VM
 
 > **Note**: Ensure that your browser has the pop-up functionality enabled before you attempt to connect via Azure Bastion.
 
@@ -208,7 +208,7 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 
    > **Note**: Wait until the script execution to complete. This might take about 5 minutes.
 
-### Task 4: Prepare the Azure subscription for deployment
+### Task 3: Prepare the Azure subscription for deployment
 
 1. Within the SSH session to the Azure VM, run the following command to sign-in to the Azure subscription you are using in this lab:
 
