@@ -89,34 +89,6 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 > **Note**: Azure Bastion allows for connection to Azure VMs without relying on public endpoints, providing protection against brute force exploits that target operating system level credentials.
 
 
-1. In the **Azure portal**, open the **Azure Cloud Shell** by clicking on the cloud shell icon in the top menu bar. Alternatively, you can open cloud shell by navigating to https://shell.azure.com 
-
-    ![](../main/media/cloudshell.png)
-
-2. After launching the Azure Cloud Shell, select the **Bash** option.
-
-     ![](../main/media/bash.png)
-     
-3. Now on You have no storage mounted dialog box click on **Show advanced settings. Select Create new under Storage account and provide values as below:
- 
-    - **Cloud Shell region**: **Central US**
-    - **Storage account** : **stacc<inject key="DeploymentID" enableCopy="false"/>**
-    - **File Share** : **blob**
-
-      ![](../main/media/create%20storage.png)
-  
-4. Run the following commands to add a subnet named **AzureBastionSubnet** to the virtual network that you created in the previous task:
-
-      ```bash
-         RGNAME='Azure-hpc-DID'
-         VNETNAME='azcli-vnet'
-         az network vnet subnet create --resource-group $RGNAME --vnet-name $VNETNAME --name AzureBastionSubnet --address-prefixes 192.168.3.0/24
-      ```
-
-   > **Note :** Replace the DID with the value **<inject key="DeploymentID" />**
-
-
-1. Close the Cloud Shell pane.
 
 1. Type **Bastions (1)** in the search box of the Azure portal menu, and select **Bastions (2)**.
 
