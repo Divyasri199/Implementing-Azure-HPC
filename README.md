@@ -62,11 +62,11 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
    
 2. When you click on Azure portal, edge browser welcome screen will come up, select Start without your data.
 
-   ![Start without data](https://github.com/CloudLabsAI-Azure/azure-spring-cloud-training/blob/master/media/get_started.png)
+   ![Start without data](../main/media/start%20without%20data.png)
    
 3. On next window, click on Confirm and start browsing.
 
-   ![](https://github.com/CloudLabsAI-Azure/azure-spring-cloud-training/blob/master/media/confirm.png)
+   ![](../main/media/confirmandstart.png)
    
 4. Now, you will see two tabs in edge browser, close first tab named with Microsoft Edge.
 
