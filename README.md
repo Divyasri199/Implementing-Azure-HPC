@@ -193,13 +193,12 @@ An az-hop environment is defined by using a configuration file named **config.ym
    
    >**Note :** If you get error stating **No such file or directory**, run the below commands and re-run the step-1:
 
-       ```bash
-       cd ..
-       ```
-       
-       ```bash
-       cd az-hop
-       ```
+      ```bash
+      cd ..
+      cd az-hop
+      ```
+     
+      
 
 1. Open the **config.yml** file using your preferred editor (such as Nano or vi)
 
