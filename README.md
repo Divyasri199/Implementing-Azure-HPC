@@ -197,7 +197,7 @@ An az-hop environment is defined by using a configuration file named **config.ym
 
 ### Task 2: Deploy Azure HPC OnDemand Platform infrastructure
 
-1. Within the SSH session to the Azure VM, run the following command to generate a Terraform deployment plan that includes the listing of all resources to be provisioned:
+1. Within the SSH session, run the following command to generate a Terraform deployment plan that includes the listing of all resources to be provisioned:
 
    ```bash
    ./build.sh -a plan
