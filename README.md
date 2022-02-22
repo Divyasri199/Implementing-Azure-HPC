@@ -134,7 +134,7 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 
     ![](../main/media/selectvm.png)
     
-1. On the **azcli-vm0** blade, select **Connect** and click on **Bastion** from the drop-down menu.
+1. On the **azcli-vm0** blade, select **Connect (1)** and click on **Bastion (2)** from the drop-down menu.
 
    ![](../main/media/connect.png) 
    
@@ -270,7 +270,7 @@ The az-hop solution provides pre-configured Packer configuration files that can 
 
 ### Task 5: Generate passwords for user and admin accounts
 
-1. On the lab computer, in the browser window displaying the Azure portal, within the SSH session to the Azure VM, run the following command to generate the password for the **clusteradmin** and **clusteruser** accounts defined in the **config.yml** configuration file:
+1. On the lab VM, within the SSH session , run the following command to generate the password for the **clusteradmin** and **clusteruser** accounts defined in the **config.yml** configuration file:
 
    ```bash
    cd ..
@@ -283,7 +283,7 @@ The az-hop solution provides pre-configured Packer configuration files that can 
    ./bin/get_secret clusteradmin
    ```
 
-   > **Note**: Note the password in notepad. You will be using it in later tasks.
+   > **Note**: Note the **Password** in notepad. You will be using it in later tasks.
 
    > **Note**: The **./bin/get_secret utility script** retrieves the password of the user you specify as its parameter from the Azure Key vault which is part of the Azure HPC OnDemand Platform infrastructure you deployed in the previous exercise.
 
@@ -297,7 +297,7 @@ In this exercise, you will install and configure software components that form t
 
 ### Task 1: Install and configure Azure HPC OnDemand Platform software components
 
-1. Now run the following command in SSH session to invoke the installation of the Azure HPC OnDemand Platform software components:
+1. Run the following command in SSH session to invoke the installation of the Azure HPC OnDemand Platform software components:
 
    ```bash
    ./install.sh
@@ -309,7 +309,7 @@ In this exercise, you will install and configure software components that form t
 
 ### Task 2: Review installation results
 
-1. Once the installation completes, on the lab computer, in the browser window displaying the Azure portal, within the SSH session to the Azure VM, run the following command to display the URL of the Azure HPC On-Demand Platform portal:
+1. Once the installation completes, within the SSH session , run the following command to display the URL of the Azure HPC On-Demand Platform portal:
 
    ```bash
    grep ondemand_fqdn playbooks/group_vars/all.yml
@@ -445,23 +445,23 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
 
     ![](../main/media/view%20files.png)
     
-3. On the page listing the files that are part of the template, in the **pingpong.sh** row, select the square icon containing the vertical ellipsis symbol and then, in the drop-down menu, select **Edit**.
+3. On the page listing the files that are part of the template, in the **pingpong.sh** row, select the square icon containing the vertical ellipsis symbol **(1)** and then, in the drop-down menu, select **Edit (2)**.
 
     ![](../main/media/edit.png)
     
-5. On the page displaying the content of the **pingpong.sh** script, in the third line, replace `slot_type=hb120v3` with `slot_type=hb120v2` and select **Save**.
+5. On the page displaying the content of the **pingpong.sh** script, in the third line, replace `slot_type=hb120v3` with `slot_type=hb120v2` **(1)** and select **Save (2)**.
 
     ![](../main/media/slot%20type.png)
     
-7. Navigate back to the **Jobs** page, select **+ New job**, in the drop-down menu, select **From Template**, 
+7. Navigate back to the **Jobs (1)** page, select **+ New job (2)**, in the drop-down menu, select **From Template (3)**, 
   
     ![](../main/media/from%20template.png) 
     
-10. On the **Templates** page, ensure that the **Intel MPI PingPong v2** entry is selected, and then select **Create New Job**.
+10. On the **Templates** page, ensure that the **Intel MPI PingPong v2** entry is selected **(1)**, and then select **Create New Job (2)**.
 
-   > **Note**: This will automatically create a job named **Intel MPI PingPong v2** that targets the **hb120v2** CycleCloud array. 
+     > **Note**: This will automatically create a job named **Intel MPI PingPong v2** that targets the **hb120v2** CycleCloud array. 
 
-   ![](../main/media/create%20new%20job.png)
+     ![](../main/media/create%20new%20job.png)
 
 1. Repeat the previous step twice to create two additional jobs based on the **Intel MPI PingPong v2** template.
 
@@ -489,7 +489,7 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
      ![](../main/media/deletingvm.png)
      
 3. On the **pbs1** page of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note that the scaleset hosting the cluster nodes persists but its size is set to **0**.
-4. To review the output of the job, switch back to the **Azure HPC On-Demand Platform** portal, select the **Jobs** menu, and, in the drop-down menu, select **Job Composer**. 
+4. To review the output of the job, switch back to the **Azure HPC On-Demand Platform** dashboard, select the **Jobs** menu, and select **Job Composer** from the drop-down list.
 
     ![](../main/media/job%20composer.png)
     
@@ -507,7 +507,7 @@ In this exercise, you will deprovision the Azure HPC OnDemand Platform lab envir
 
 ### Task 1: Terminate the cluster
 
-1. In the lab VM, navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** dashboard.
+1. In the lab VM, navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal.
 
 
 3. On the **pbs1** page, select **Terminate** and, when prompted for confirmation, select **OK**.
