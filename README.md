@@ -417,11 +417,19 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
 
 ### Task 2: Create jobs based on a non-default Azure HPC OnDemand Platform template
 
-1. On the lab computer, in the browser window, switch back to the **Azure HPC On-Demand Platform** portal, select the **Jobs** menu, and, in the drop-down menu, select **Job Composer**. 
-1. On the **Jobs** page, select **Templates**.
-1. On the **Templates** page, in the list of predefined templates, select the **Intel MPI PingPong** entry and then select **Copy Template**.
+1. Navigate back to the **Azure HPC On-Demand Platform** dashboard page, select the **Jobs** from the menu and select **Job Composer** from the drop-down list.
 
-   > **Note**: The Message Passing Interface (MPI) ping-pong tests measure network latency and throughput between nodes on the cluster by sending packets of data back and forth between paired nodes repeatedly. The latency is the average of half of the time that it takes for a packet to make a round trip between a pair of nodes, in microseconds. The throughput is the average rate of data transfer between a pair of nodes, in MB/second. 
+   ![](../main/media/job%20composer.png)
+   
+3. On the **Job Composer** page, select **Templates**.
+
+    ![](../main/media/templates.png)
+    
+3. On the **Templates** page, under the list of predefined templates, select the **Intel MPI PingPong** entry and then select **Copy Template**.
+
+     ![](../main/media/copy%20template.png)
+
+     > **Note**: The Message Passing Interface (MPI) ping-pong tests measure network latency and throughput between nodes on the cluster by sending packets of data back and forth between paired nodes repeatedly. The latency is the average of half of the time that it takes for a packet to make a round trip between a pair of nodes, in microseconds. The throughput is the average rate of data transfer between a pair of nodes, in MB/second. 
 
 1. On the **New Template** page, specify the following settings and select **Save**:
 
@@ -429,12 +437,17 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
    |---|---|
    |Name|**Intel MPI PingPong v2**|
    |Cluster|**AZHOP - Cluster**|
-   |Name|**<p>A very basic template for running Intel MPI ping pong on hb120v2</p>**|
+   |Note|**<p>A very basic template for running Intel MPI ping pong on hb120v2</p>**|
+   
+   ![](../main/media/new%20template.png)
 
-1. Back on the **Templates** page, select the newly created template and then select **View Files**.
-1. On the page listing the files that are part of the template, in the **pingpong.sh** row, select the square icon containing the vertical ellipsis symbol and then, in the drop-down menu, select **Edit**.
-1. On the page displaying the content of the **pingpong.sh** script, in the third line, replace `slot_type=hb120v3` with `slot_type=hb120v2` and select **Save**.
-1. Navigate back to the **Jobs** page, select **+ New job**, in the drop-down menu, select **From Template**, on the **Templates** page, ensure that the **Intel MPI PingPong v2** entry is selected, and then select **Create New Job**.
+1. Navigate back to **Templates** page, select the newly created template and then select **View Files**.
+
+    ![](../main/media/view%20files.png)
+    
+3. On the page listing the files that are part of the template, in the **pingpong.sh** row, select the square icon containing the vertical ellipsis symbol and then, in the drop-down menu, select **Edit**.
+4. On the page displaying the content of the **pingpong.sh** script, in the third line, replace `slot_type=hb120v3` with `slot_type=hb120v2` and select **Save**.
+5. Navigate back to the **Jobs** page, select **+ New job**, in the drop-down menu, select **From Template**, on the **Templates** page, ensure that the **Intel MPI PingPong v2** entry is selected, and then select **Create New Job**.
 
    > **Note**: This will automatically create a job named **Intel MPI PingPong v2** that targets the **hb120v2** CycleCloud array. 
 
