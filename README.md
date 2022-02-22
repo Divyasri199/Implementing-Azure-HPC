@@ -413,6 +413,8 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
 1. Navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the node status until it changes to terminating, resulting eventually in their deletion. 
 1. On the **pbs1** page of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note that the scaleset hosting the cluster nodes persists but its size is set to **0**.
 
+    ![](..main/media/size%20is%200.png)
+
 ### Task 2: Create jobs based on a non-default Azure HPC OnDemand Platform template
 
 1. On the lab computer, in the browser window, switch back to the **Azure HPC On-Demand Platform** portal, select the **Jobs** menu, and, in the drop-down menu, select **Job Composer**. 
