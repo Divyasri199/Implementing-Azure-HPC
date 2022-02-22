@@ -283,7 +283,7 @@ The az-hop solution provides pre-configured Packer configuration files that can 
    ./bin/get_secret clusteradmin
    ```
 
-   > **Note**: Record the password. You will need it later in this lab.
+   > **Note**: Note the password in notepad. You will be using it in later tasks.
 
    > **Note**: The **./bin/get_secret utility script** retrieves the password of the user you specify as its parameter from the Azure Key vault which is part of the Azure HPC OnDemand Platform infrastructure you deployed in the previous exercise.
 
