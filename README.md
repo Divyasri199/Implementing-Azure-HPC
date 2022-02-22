@@ -404,11 +404,11 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
 11. On the **Active jobs** page, verify that there are three active jobs listed in the **Queued** status.
 12. Navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the progress of node provisioning.
 
-   > **Note**: Wait until the status of nodes changes to **Ready**. This should take about 5 minutes.
+     > **Note**: Wait until the status of nodes changes to **Ready**. This should take about 5 minutes.
 
 1. Once the nodes are listed with the **Ready** status, switch back to the **Active jobs** page, refresh it, and note that the jobs are no longer listed there.
 
-   > **Note**: If the jobs are still listed as queued, wait for a few minutes and refresh the page again. 
+    > **Note**: If the jobs are still listed as queued, wait for a few minutes and refresh the page again. 
 
 1. Navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the node status until it changes to terminating, resulting eventually in their deletion. 
 1. On the **pbs1** page of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note that the scaleset hosting the cluster nodes persists but its size is set to **0**.
