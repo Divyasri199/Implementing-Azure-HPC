@@ -507,9 +507,15 @@ In this exercise, you will deprovision the Azure HPC OnDemand Platform lab envir
 
 ### Task 1: Terminate the cluster
 
-1. On the lab computer, in the browser window, navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal.
-1. On the **pbs1** page, select **Terminate** and, when prompted for confirmation, select **OK**.
-1. Monitor the progress of terminating the cluster.
+1. In the lab VM, navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** dashboard.
+
+
+3. On the **pbs1** page, select **Terminate** and, when prompted for confirmation, select **OK**.
+
+   ![](../main/media/terminate.png)
+  
+   
+5. Monitor the progress of terminating the cluster.
 
    > **Note**: Ensure that all nodes and scaleset are deleted before you proceed to the next step.
 
