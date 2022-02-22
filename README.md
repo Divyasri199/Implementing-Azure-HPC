@@ -330,12 +330,24 @@ In this exercise, you will install and configure software components that form t
 
      ![](../main/media/ondemand%20signin.png)
 
-1. In the **Monitoring** menu, select **Azure CycleCloud** and, when presented with the page titled **App has not been initialized or does not exist**, select **Initialize App**. 
+1. Click on the **Monitoring** menu and select **Azure CycleCloud** from the drop-down list.
+
+   ![](../main/media/azure%20cycle%20cloud.png)
+
+    
+4. Now you will navigate to the page titled **App has not been initialized or does not exist** and select **Initialize App**.
 
    > **Note**: This prompt is a reflection of the architecture of the OnDemand component, which the Azure HPC OnDemand Platform solution relies on to implement its portal. The shared front-end creates Per User NGINX (PUN) processes to provide connectivity to such components as **Azure CycleCloud**, **Grafana**, or **Robinhood Dashboard**. 
 
+     ![](../main/media/initialize%20app.png)
+
 1. On the **Azure CycleCloud for Azure HPC On-Demand Platform** page, note that presents a configuration of a cluster named **pbs1**. 
-1. On the **pbs1** page, select the **Arrays* tab and note that it contains six entries representing queue definitions you reviewed earlier in the **config.yml** file. 
+
+    ![](../main/media/pbs1.png)
+    
+3. On the **pbs1** page, select the **Arrays** tab and note that it contains six entries representing queue definitions you reviewed earlier in the **config.yml** file. 
+
+   ![](../main/media/arrays.png)
 
 
 ## Exercise 4: Validate functionality of Azure HPC OnDemand Platform
