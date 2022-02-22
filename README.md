@@ -324,9 +324,11 @@ In this exercise, you will install and configure software components that form t
 3. When you are prompted to sign in use the below credentials:
 
     - **Username**: **clusteradmin** 
-    - **Password** : Enter the password you identified in the previous step.
+    - **Password** : Enter the **Password** you identified in the previous step.
 
    > **Note**: You will be presented with the **Azure HPC On-Demand Platform** dashboard. Review its interface, starting with the top level menu, which provides access to **Apps**, **Files**, **Jobs**, **Clusters**, **Interactive Apps**, **Monitoring**, and **My Interactive Sessions** menu items.
+
+     ![](../main/media/ondemand%20signin.png)
 
 1. In the **Monitoring** menu, select **Azure CycleCloud** and, when presented with the page titled **App has not been initialized or does not exist**, select **Initialize App**. 
 
