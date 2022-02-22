@@ -464,13 +464,19 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
    ![](../main/media/create%20new%20job.png)
 
 1. Repeat the previous step twice to create two additional jobs based on the **Intel MPI PingPong v2** template.
-1. Note that, as before, all three jobs are currently in the **Not Submitted** state. To submit them, select each one of them and select **Submit**. 
+
+
+3. Note that, as before, all three jobs are currently in the **Not Submitted** state. To submit them, select each one of them and select **Submit**. 
 
    > **Note**: The status of the jobs should change to **Queued**.
+
+   ![](../main/media/submit1.png)
 
 1. Navigate to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the progress of node provisioning.
 
    > **Note**: Wait until the status of nodes changes to **Ready**. This should take about 5 minutes.
+
+   ![](../main/media/nodes%20provision.png)
 
 1. Once the nodes are listed with the **Ready** status, switch back to the **Active jobs** page, refresh it, and note that the jobs are no longer listed there.
 
