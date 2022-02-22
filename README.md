@@ -297,7 +297,7 @@ In this exercise, you will install and configure software components that form t
 
 ### Task 1: Install and configure Azure HPC OnDemand Platform software components
 
-1. Now run the following command to invoke the installation of the Azure HPC OnDemand Platform software components:
+1. Now run the following command in SSH session to invoke the installation of the Azure HPC OnDemand Platform software components:
 
    ```bash
    ./install.sh
