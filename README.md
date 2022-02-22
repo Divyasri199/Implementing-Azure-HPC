@@ -395,9 +395,14 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
     ![](../main/media/scaleset.png)
     
 7. Select the entry on the **Nodes** tab and review the details of the cluster nodes in the lower section of the page, including the name of each node, their status, the number of cores, and the placement group.
-8. Navigate back to the **Azure HPC On-Demand Platform** portal, select the **Jobs** menu, and, in the drop-down menu, select **Active jobs**.
-9. On the **Active jobs** page, verify that there are three active jobs listed in the **Queued** status.
-10. Navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the progress of node provisioning.
+
+
+9. Navigate back to the **Azure HPC On-Demand Platform** dashboard page and select the **Jobs** from menu then select **Active jobs** from the drop-down list.
+
+    ![](../main/media/activejobs.png)
+    
+11. On the **Active jobs** page, verify that there are three active jobs listed in the **Queued** status.
+12. Navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the progress of node provisioning.
 
    > **Note**: Wait until the status of nodes changes to **Ready**. This should take about 5 minutes.
 
