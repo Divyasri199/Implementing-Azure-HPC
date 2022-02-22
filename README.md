@@ -259,10 +259,15 @@ The az-hop solution provides pre-configured Packer configuration files that can 
 
      ![image defination](../main/media/image%20defination.png)
      
-5. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Azure virtual machines** and, in the list of results, select **Azure virtual machines**.
+4. Navigate back to Home page and type **Virtual machines (1)** in the search box of **Azure Portal** then select **Virtual machines (2)**.
+
+     ![](../main/media/virtual%20machines.png)   
+     
 6. On the **Azure virtual machines** blade, review the listing of the provisioned virtual machines.
 
    > **Note**: If needed, filter the listing of the virtual machines by setting the resource group criterion to **azhop**.
+
+    ![list of VMs](../main/media/listofvm.png)
 
 1. Close the newly opened browser tab displaying the **Azure virtual machines** blade in the Azure portal.
 
