@@ -214,8 +214,7 @@ An az-hop environment is defined by using a configuration file named **config.ym
    ./build.sh -a apply
    ```
 
-   > **Note**: Wait for the deployment to complete. This should take about 20 minutes. Once the deployment completes, you should see the message stating **Apply complete! Resources: 124 added, 0 changed, 0 destroyed.**
-
+   > **Note**: Wait for the deployment to complete. This should take about 20 minutes. 
 
 ### Task 3: Build images
 
@@ -265,8 +264,6 @@ The az-hop solution provides pre-configured Packer configuration files that can 
      
 6. On the **Azure virtual machines** blade, review the listing of the provisioned virtual machines.
 
-   > **Note**: If needed, filter the listing of the virtual machines by setting the resource group criterion to **azhop**.
-
     ![list of VMs](../main/media/listofvm.png)
 
 1. Close the newly opened browser tab displaying the **Azure virtual machines** blade in the Azure portal.
@@ -276,7 +273,7 @@ The az-hop solution provides pre-configured Packer configuration files that can 
 1. On the lab computer, in the browser window displaying the Azure portal, within the SSH session to the Azure VM, run the following command to generate the password for the **clusteradmin** and **clusteruser** accounts defined in the **config.yml** configuration file:
 
    ```bash
-   cd ~/az-hop/
+   cd ..
    ./create_passwords.sh
    ```
 
