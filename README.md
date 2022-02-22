@@ -362,7 +362,9 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
 
     ![](../main/media/job%20composer.png)
     
-3. On the **Jobs** page, select **+ New job** the select **From Default Template** from the drop-down list
+3. On the **Jobs** page, select **+ New job** the select **From Default Template** from the drop-down list.
+
+   ![](../main/media/nrejob.png)
 
    > **Note**: This will automatically create a job named **(default) Sample Sequential Job** that targets the **execute** CycleCloud array. To identify the content of the job script, ensure that the newly created job is selected and review the **Script contents** pane.
 
@@ -373,6 +375,8 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
 1. Note that all three jobs are currently in the **Not Submitted** state. To submit them, select each one of them and select **Submit**. 
 
    > **Note**: The status of the jobs should change to **Queued**.
+
+   ![](../main/media/submit.png)
 
 1. On the lab computer, in the browser window displaying the Azure HPC On-Demand Platform portal, select the **Azure HPC On-Demand Platform** header, select the **Monitoring** menu, and, in the drop-down list, select **Azure CycleCloud**.
 1. On the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, monitor the status of the cluster and note that the number of nodes increases to **3**, which initially are listed in the **acquiring** state.
