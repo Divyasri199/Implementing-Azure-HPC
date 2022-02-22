@@ -315,9 +315,16 @@ In this exercise, you will install and configure software components that form t
    grep ondemand_fqdn playbooks/group_vars/all.yml
    ```
 
-   > **Note**: Record this value. You will need it later in this lab.
+   > **Note**: Note the **ondemand_fqdn** in the notepad. You will need it in the further steps.
 
-1. From the lab computer, start a web browser, navigate to the URL of the Azure HPC On-Demand Platform portal you identified earlier in this task and, when prompted, sign in with the **clusteradmin** user account and its password you identified in the previous step.
+1. Within the lab VM, open a new tab in browser, navigate to the URL of the Azure HPC On-Demand Platform portal you identified earlier in this task.
+ 
+     ![](../main/media/ondemandsite.png)
+     
+3. When you are prompted to sign in use the below credentials:
+
+    - **Username**: **clusteradmin** 
+    - **Password** : Enter the password you identified in the previous step.
 
    > **Note**: You will be presented with the **Azure HPC On-Demand Platform** dashboard. Review its interface, starting with the top level menu, which provides access to **Apps**, **Files**, **Jobs**, **Clusters**, **Interactive Apps**, **Monitoring**, and **My Interactive Sessions** menu items.
 
