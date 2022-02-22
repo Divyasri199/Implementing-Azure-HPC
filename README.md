@@ -330,7 +330,7 @@ In this exercise, you will install and configure software components that form t
 
      ![](../main/media/ondemand%20signin.png)
 
-1. Click on the **Monitoring** menu and select **Azure CycleCloud** from the drop-down list.
+1. On the **Azure HPC On-Demand Platform portal** Dashboard page, click on the **Monitoring** menu and select **Azure CycleCloud** from the drop-down list.
 
    ![](../main/media/azure%20cycle%20cloud.png)
 
@@ -377,15 +377,27 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
    > **Note**: The status of the jobs should change to **Queued**.
 
    ![](../main/media/submit.png)
+   
+1. On the lab VM, navigate back to **Azure HPC On-Demand Platform portal** Dashboard page, click on the **Monitoring** menu and select **Azure CycleCloud** from the drop-down list.
 
-1. On the lab computer, in the browser window displaying the Azure HPC On-Demand Platform portal, select the **Azure HPC On-Demand Platform** header, select the **Monitoring** menu, and, in the drop-down list, select **Azure CycleCloud**.
-1. On the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, monitor the status of the cluster and note that the number of nodes increases to **3**, which initially are listed in the **acquiring** state.
-1. On the **Nodes** tab, verify that **execute** appears in the **Template** column, the **Nodes** column contains the entry **3**, and the **Last status** column displays the **Creating VM** message.
-1. On the **pbs1** page of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note a scaleset that hosts the cluster nodes with its size set to **3**.
-1. Select the entry on the **Nodes** tab and review the details of the cluster nodes in the lower section of the page, including the name of each node, their status, the number of cores, and the placement group.
-1. Navigate back to the **Azure HPC On-Demand Platform** portal, select the **Jobs** menu, and, in the drop-down menu, select **Active jobs**.
-1. On the **Active jobs** page, verify that there are three active jobs listed in the **Queued** status.
-1. Navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the progress of node provisioning.
+   ![](../main/media/azure%20cycle%20cloud.png)
+
+1. Monitor the status of the cluster and note that the number of nodes increases to **3**, which initially are listed in the **acquiring** state.
+
+   ![](../main/media/nodes%203.png)
+   
+3. On the **Nodes** tab, verify that **execute** appears in the **Template** column, the **Nodes** column contains the entry **3**, and the **Last status** column displays the **Creating VM** message.
+
+   ![](../main/media/creatingvm.png)
+   
+5. On the **pbs1** page of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note a scaleset that hosts the cluster nodes with its size set to **3**.
+
+    ![](../main/media/scaleset.png)
+    
+7. Select the entry on the **Nodes** tab and review the details of the cluster nodes in the lower section of the page, including the name of each node, their status, the number of cores, and the placement group.
+8. Navigate back to the **Azure HPC On-Demand Platform** portal, select the **Jobs** menu, and, in the drop-down menu, select **Active jobs**.
+9. On the **Active jobs** page, verify that there are three active jobs listed in the **Queued** status.
+10. Navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the progress of node provisioning.
 
    > **Note**: Wait until the status of nodes changes to **Ready**. This should take about 5 minutes.
 
