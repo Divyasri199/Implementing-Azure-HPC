@@ -134,7 +134,7 @@ In this exercise, you will set up an Azure VM that will be used for deployment o
 
     ![](../main/media/selectvm.png)
     
-1. On the **azcli-vm0** blade, select **Connect (1)** and click on **Bastion (2)** from the drop-down menu.
+1. On the **azcli-vm0** blade, click on **Connect (1)** and select **Bastion (2)** from the drop-down menu.
 
    ![](../main/media/connect.png) 
    
@@ -157,7 +157,7 @@ In this exercise, you will deploy the Azure HPC OnDemand Platform infrastructure
 
 An az-hop environment is defined by using a configuration file named **config.yml**, which needs to reside in the root of the repository. The simplest way to create is by cloning the template file **config.tpl.yml** and modifying the content of the copied file. In this task, you will review its content and, if needed, set the target Azure region for deploying the Azure HPC OnDemand Platform infrastructure.
 
-1. On the lab computer, in the browser window displaying the Azure portal, within the SSH session to the Azure VM, run the following commands to copy **config.tpl.yml** to **config.yml**
+1. On the lab VM, within the SSH session, run the following commands to copy **config.tpl.yml** to **config.yml**
 
    ```bash
    sudo cp config.tpl.yml config.yml
