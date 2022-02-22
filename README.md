@@ -482,12 +482,22 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
 
    > **Note**: If the jobs are still listed as queued, wait for a few minutes and refresh the page again. 
 
+    ![](../main/media/nodata.png)
+
 1. Navigate back to the **Azure CycleCloud for Azure HPC On-Demand Platform** portal and monitor the node status until it changes to terminating, resulting eventually in their deletion. 
-1. On the **pbs1** page of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note that the scaleset hosting the cluster nodes persists but its size is set to **0**.
-1. To review the output of the job, switch back to the **Azure HPC On-Demand Platform** portal, select the **Jobs** menu, and, in the drop-down menu, select **Job Composer**. 
-1. On the **Jobs** page, select any of the **Intel MPI PingPong v2** job entries and, in the **Folder Contents** section, select **PingPong.o3**. 
+  
+     ![](../main/media/deletingvm.png)
+     
+3. On the **pbs1** page of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note that the scaleset hosting the cluster nodes persists but its size is set to **0**.
+4. To review the output of the job, switch back to the **Azure HPC On-Demand Platform** portal, select the **Jobs** menu, and, in the drop-down menu, select **Job Composer**. 
+
+    ![](../main/media/job%20composer.png)
+    
+6. On the **Jobs** page, select any of the **Intel MPI PingPong v2** job entries and, in the **Folder Contents** section, select **PingPong.o3**. 
 
    > **Note**: This will automatically open another web browser tab displaying the output of the job.
+
+   ![](../main/media/pingpong.png)
 
 ## Exercise 5: Deprovision Azure HPC OnDemand Platform environment
 
