@@ -358,8 +358,11 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
 
 ### Task 1: Create jobs based on the default Azure HPC OnDemand Platform template
 
-1. On the lab computer, in the browser window displaying the Azure HPC On-Demand Platform portal, navigate to the Dashboard page, select **Jobs** menu title and, in the drop-down menu, select **Job Composer**. 
-1. On the **Jobs** page, select **+ New job** and, in the drop-down menu, select **From Default Template**.
+1. On the lab VM, navigate back to **Azure HPC On-Demand Platform portal** Dashboard page, and select **Jobs** from the menu title the select **Job Composer** from the drop-down list.
+
+    ![](../main/media/job%20composer.png)
+    
+3. On the **Jobs** page, select **+ New job** the select **From Default Template** from the drop-down list
 
    > **Note**: This will automatically create a job named **(default) Sample Sequential Job** that targets the **execute** CycleCloud array. To identify the content of the job script, ensure that the newly created job is selected and review the **Script contents** pane.
 
