@@ -393,7 +393,7 @@ In this exercise, you will validate the functionality of the Azure HPC OnDemand 
 
    ![](../main/media/creatingvm.png)
    
-5. On the **pbs1** page of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note a scaleset that hosts the cluster nodes with its size set to **3**.
+5. On the **pbs1** tab of the **Azure CycleCloud for Azure HPC On-Demand Platform** portal, select **Scalesets** tab and note a scaleset that hosts the cluster nodes with its size set to **3**.
 
     ![](../main/media/scaleset.png)
     
