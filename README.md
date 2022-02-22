@@ -446,10 +446,22 @@ In this exercise, you will validate functionality of Azure HPC OnDemand Platform
     ![](../main/media/view%20files.png)
     
 3. On the page listing the files that are part of the template, in the **pingpong.sh** row, select the square icon containing the vertical ellipsis symbol and then, in the drop-down menu, select **Edit**.
-4. On the page displaying the content of the **pingpong.sh** script, in the third line, replace `slot_type=hb120v3` with `slot_type=hb120v2` and select **Save**.
-5. Navigate back to the **Jobs** page, select **+ New job**, in the drop-down menu, select **From Template**, on the **Templates** page, ensure that the **Intel MPI PingPong v2** entry is selected, and then select **Create New Job**.
+
+    ![](../main/media/edit.png)
+    
+5. On the page displaying the content of the **pingpong.sh** script, in the third line, replace `slot_type=hb120v3` with `slot_type=hb120v2` and select **Save**.
+
+    ![](../main/media/slot%20type.png)
+    
+7. Navigate back to the **Jobs** page, select **+ New job**, in the drop-down menu, select **From Template**, 
+  
+    ![](../main/media/from%20template.png) 
+    
+10. On the **Templates** page, ensure that the **Intel MPI PingPong v2** entry is selected, and then select **Create New Job**.
 
    > **Note**: This will automatically create a job named **Intel MPI PingPong v2** that targets the **hb120v2** CycleCloud array. 
+
+   ![](../main/media/create%20new%20job.png)
 
 1. Repeat the previous step twice to create two additional jobs based on the **Intel MPI PingPong v2** template.
 1. Note that, as before, all three jobs are currently in the **Not Submitted** state. To submit them, select each one of them and select **Submit**. 
