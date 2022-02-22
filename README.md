@@ -193,7 +193,7 @@ An az-hop environment is defined by using a configuration file named **config.ym
    - **images**: the list of images that will be available for deployment of compute cluster nodes and their respective configuration
    - **queues**: the list of node arrays of CycleCloud and their respective configuration
 
-4. After updating the **config.yml** file to the one you are using in this lab, save the change, and close the file.
+4. After updating the **config.yml** file, save the change, and close the file.
 
 ### Task 2: Deploy Azure HPC OnDemand Platform infrastructure
 
